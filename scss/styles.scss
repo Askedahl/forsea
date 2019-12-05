@@ -1,0 +1,149 @@
+// Variable Overrides 
+$theme-colors: (
+  "primary": #ffffff
+);
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$primary: #ffffff;
+$secondary: #73BF9C;
+$third: #027373;
+$fourth: #025959;
+$fifth: #F5F5F7;
+html {
+    scroll-behavior: smooth;
+  }
+.container-fluid{
+    overflow: hidden;
+}
+
+// Header start
+
+.header {
+    border-bottom: 9px solid $secondary;
+}
+
+.navbar-nav {
+    background-color: $primary;
+}
+
+.navbar-toggler{
+    background-color: $primary;
+}
+
+.navbar-toggler-icon {
+color: $third !important;
+}
+
+.fa {
+    color: $secondary;
+    font-size: 30px;
+}
+
+.nav-link {
+    color: $third !important;
+    &:hover {
+        text-decoration: underline;
+      }
+}
+
+.logo {
+    width: 200px;
+    margin-left: 60px;
+}
+
+.navbar {
+    background-image: url(https://www.forsea.dk/Content/site/images/logo-line.png);
+    background-position: 0px -9px;
+    background-repeat: no-repeat;
+    background-size: 1600px 80px; 
+    margin-top: 8px; 
+    margin-bottom: 8px;
+}
+
+// Header end
+// infographic1 start
+
+.infographic1 {
+    background-color: $third;
+}
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+// infographic1 end
+// splash start
+
+.splash {
+    background-color: $primary;
+}
+
+// splash end
+// intro start
+
+.intro {
+    background-color: $fifth;
+}
+
+// intro end
+// infographic2 start
+
+.infographic2 {
+    background-color: $third;
+}
+
+// infographic2 end
+// video1 start
+
+.video1 {
+    background-color: $fifth;
+}
+
+// video1 end
+// infographic3 start
+
+.infographic3 {
+    background-color: $third;
+}
+
+// infographic3 end
+// video2 start
+
+.video2 {
+    background-color: $fifth;
+}
+
+// video2 end
+// outro start
+
+.outro {
+    border-bottom: 9px solid $secondary;
+}
+
+// outro end
+// Footer start
+
+.font-weight-bold {
+    color: $primary;
+}
+.page-footer {
+    background-color: $third;
+    border-top: 80px solid $third;
+}
+.footer-copyright {
+    border-top: 4px solid $secondary;
+    width: 80%;
+    margin: auto;
+    border-bottom: 80px solid $third;
+    margin-top: 40px;
+}
+
+.footer-copyright-text {
+    color: $primary;
+}
+
+.footer-logo {
+    width: 90px;
+}
+
+// Footer end
