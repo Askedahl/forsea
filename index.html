@@ -4,7 +4,10 @@
         <title>Bootstrap 4 Layout</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src='https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/bootstrap.css">
@@ -41,20 +44,26 @@
                     </nav>
 
                     <div class="jumbotron jumbotron-fluid header infographic1">
-                        <div class="container">
+                        <div class="container-fluid p-0">
                             <h1 class="display-4">infographic</h1>
                             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
                         </div>
                     </div>
 
                     <div class="jumbotron jumbotron-fluid splash">
-                        <div class="container">
-                            <h1 class="display-4">splash</h1>
-                            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                        <div class="container-fluid p-0">
+                            <video autoplay muted loop id="myVideo">
+                                <source src="https://zippy.gfycat.com/FearfulSoggyFox.webm" type="video/mp4">
+                            </video>
+                            <h1 class="display-4 splash-header">splash</h1>
+                            <p class="lead"></p>
+                            <svg class="svg1 position-absolute" width="100%" height="40%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID" d=""/></svg>
+                            <svg class="svg2 position-absolute" width="100%" height="40%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID1" d=""/></svg>
+                            <svg class="svg3 position-absolute" width="100%" height="40%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID2" d=""/></svg>
                         </div>
                     </div>
 
-                    <div class="row intro" id="intro">
+                    <div class="row intro p-md-5" id="intro">
                         <div class="col-sm-12 col-md-6">
                             <h3>An important heading</h3>
                              <p class="lead">A sort of important subheading can go here, which is larger and gray.</p>
@@ -62,20 +71,25 @@
                              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            ..billede..
+                            <img class="img" src="#" alt="img">
                         </div>
                     </div>
 
                     <div class="jumbotron jumbotron-fluid infographic2">
-                            <div class="container">
+                            <div class="container-fluid p-0">
                                 <h1 class="display-4">infographic</h1>
                                 <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                                <svg class="svg4 position-absolute" width="100%" height="40%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID3" d=""/></svg>
+                                <svg class="svg5 position-absolute" width="100%" height="40%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID5" d=""/></svg>
                             </div>
                     </div>
 
-                    <div class="row video1" id="kaptajn">
+                    <div class="row video1 p-md-5" id="kaptajn">
                             <div class="col-sm-12 col-md-6">
-                                    ..video..
+                                    <video width="100%" height="100%" controls>
+                                            <source src="#" type="video/mp4">
+                                            <source src="#" type="video/ogg">
+                                    </video>
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <h3>An important heading</h3>
@@ -86,13 +100,16 @@
                     </div>
 
                     <div class="jumbotron jumbotron-fluid infographic3">
-                            <div class="container">
+                            <div class="container-fluid p-0">
                                 <h1 class="display-4">infographic</h1>
                                 <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                                
+                                <svg class="svg6 position-absolute" width="100%" height="40%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID6" d=""/></svg>
+                                <svg class="svg7 position-absolute" width="100%" height="40%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path id="myID8" d=""/></svg>
                             </div>
                     </div>
 
-                    <div class="row video2" id="maskinmester">
+                    <div class="row video2 p-md-5" id="maskinmester">
                             <div class="col-sm-12 col-md-6">
                                 <h3>An important heading</h3>
                                  <p class="lead">A sort of important subheading can go here, which is larger and gray.</p>
@@ -100,13 +117,16 @@
                                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             </div>
                             <div class="col-sm-12 col-md-6">
-                                ..video..
+                                    <video width="100%" height="100%" controls>
+                                            <source src="#" type="video/mp4">
+                                            <source src="#" type="video/ogg">
+                                    </video>
                             </div>
                     </div>
 
-                    <div class="row outro" id="outro">
+                    <div class="row outro p-md-5" id="outro">
                             <div class="col-sm-12 col-md-6">
-                                ..billede..
+                                <img class="img" src="#" alt="img">
                             </div>
                             <div class="col-sm-12 col-md-6">
                                 <h3>An important heading</h3>
@@ -117,8 +137,28 @@
                     </div>
 
 <footer class="page-footer font-small indigo">
+        <section class="newsletter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="content">
+                                <form>
+                                        <h2 class="font-weight-bold text-uppercase mt-3 mb-4">Nyhedsbrev:
+                                            </h2>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Enter your email">
+                                        <span class="input-group-btn">
+                                            <button class="btn" type="submit">TILMELD</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         <div class="container text-center text-md-left">
-          <div class="row">
+          <div class="row footer-info">
             <div class="col-md-3 mx-auto">
                     <img class="footer-logo" src="assets/icon_kundservice_transp.webp" alt="Logo">
               <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Kontakt os:
@@ -194,6 +234,9 @@
 </footer>
 
             </div>
+        <script src="/js/wavify.js"></script>
+        <script src="/js/jquery.wavify.js"></script>
+        <script src="/js/js.js"></script>
         <script src="/js/jquery.min.js"></script>
         <script src="/js/popper.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>

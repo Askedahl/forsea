@@ -10,9 +10,11 @@ $secondary: #73BF9C;
 $third: #027373;
 $fourth: #025959;
 $fifth: #F5F5F7;
+
 html {
     scroll-behavior: smooth;
   }
+
 .container-fluid{
     overflow: hidden;
 }
@@ -25,6 +27,8 @@ html {
 
 .navbar-nav {
     background-color: $primary;
+    border-right: 15px solid $primary;
+    border-left: 15px solid $primary;
 }
 
 .navbar-toggler{
@@ -42,6 +46,8 @@ color: $third !important;
 
 .nav-link {
     color: $third !important;
+    font-size: 18px;
+    font-weight: 500;
     &:hover {
         text-decoration: underline;
       }
@@ -60,7 +66,9 @@ color: $third !important;
     margin-top: 8px; 
     margin-bottom: 8px;
 }
-
+.collapse {
+    margin-right: 100px;
+}
 // Header end
 // infographic1 start
 
@@ -76,15 +84,73 @@ color: $third !important;
 
 .splash {
     background-color: $primary;
+    padding-top: 0px;
+    position: relative;
 }
-
+.splash-header {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: $primary;
+}
+.splash-lead {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: $primary;
+}
+#myVideo {
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  .svg1 {
+    top: 75%;
+  }
+  .svg2 {
+    top: 75%;
+  }
+  .svg3 {
+    top: 75%;
+  }
+  @media screen and (max-width: 600px) {
+    .svg1 {
+        top: 60%;
+      }
+      .svg2 {
+        top: 60%;
+      }
+      .svg3 {
+        top: 60%;
+      }
+  }
+  @media screen and (max-width: 1000px) {
+    .svg1 {
+        top: 65%;
+      }
+      .svg2 {
+        top: 65%;
+      }
+      .svg3 {
+        top: 65%;
+      }
+  }
 // splash end
 // intro start
 
 .intro {
     background-color: $fifth;
+    margin-top: 100px;
 }
-
+@media screen and (max-width: 600px) {
+    .intro {
+        margin-top: 0px;
+        padding: 20px;
+    }
+}
 // intro end
 // infographic2 start
 
@@ -97,8 +163,13 @@ color: $third !important;
 
 .video1 {
     background-color: $fifth;
+    border-top: 150px solid $third;
 }
-
+@media screen and (max-width: 600px) {
+    .video1 {
+        padding: 20px;
+    }
+}
 // video1 end
 // infographic3 start
 
@@ -111,24 +182,78 @@ color: $third !important;
 
 .video2 {
     background-color: $fifth;
+    border-top: 150px solid $third;
 }
-
+@media screen and (max-width: 600px) {
+    .video2 {
+        padding: 20px;
+    }
+}
 // video2 end
 // outro start
 
 .outro {
     border-bottom: 9px solid $secondary;
 }
-
+@media screen and (max-width: 600px) {
+    .outro {
+        padding: 20px;
+    }
+}
 // outro end
 // Footer start
+.newsletter {
+    background: $third;
+    border-bottom: 4px solid $secondary;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 60px;
+    }
+    
+    .newsletter .content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    
+    }
+    .newsletter .content h2 {
+    color: $primary;
+    margin-bottom: 40px; 
+    }
+    .newsletter .content .form-control {
+    height: 60px;
+    border-top: 3px solid $primary;
+    border-left: 3px solid $primary;
+    border-bottom: 3px solid $primary;
+    border-radius:0;
+    background-color: $third;
+    color: $primary;
+    }
+    .newsletter .content .btn {
+    min-height: 60px; 
+    width: 150px;
+    border-radius:0;
+    background: $third;
+    color: $primary;
+    font-weight:600;
+    border: 3px solid $primary;
+    &:hover {
+        background: $primary;
+        color: $third;
+    }
+    }
+    ::placeholder {
+        color: $primary !important;
+      }
 
 .font-weight-bold {
     color: $primary;
 }
 .page-footer {
     background-color: $third;
-    border-top: 80px solid $third;
+    border-top: 40px solid $third;
 }
 .footer-copyright {
     border-top: 4px solid $secondary;
@@ -137,7 +262,9 @@ color: $third !important;
     border-bottom: 80px solid $third;
     margin-top: 40px;
 }
-
+.footer-info {
+    border-top: 60px solid $third;
+}
 .footer-copyright-text {
     color: $primary;
 }
